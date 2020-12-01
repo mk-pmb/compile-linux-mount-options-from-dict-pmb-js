@@ -14,6 +14,7 @@ function compileFsOptFromDict(orig) {
   const optList = [];
 
   function addOpt(k, v) {
+    if (v === undefined) { return; }
     if (v === null) { return optList.push(k); }
     if (v === true) { return optList.push(k); }
     if (v === false) { return optList.push('no' + k); }

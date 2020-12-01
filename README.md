@@ -20,6 +20,7 @@ This module exports one function:
 Where `opt` are your mount options, as a dictionary object or an array.
 In case of an array they're just joined. Values in a dictionary may be:
 
+* `undefined` to ignore that entry
 * A string
 * A number
 * `null` or `true` to add the option with neither `=` nor value.
