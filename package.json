@@ -1,5 +1,5 @@
 { "name": "compile-linux-mount-options-from-dict-pmb",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Make a comma-separated list from mount options in a dictionary object.",
   "keywords": [
     "dict",
@@ -27,6 +27,9 @@
 
   "dependencies": {},
   "devDependencies": {
+    "nodemjs": "^0.1.8",
+    "p-fatal": "^0.1.3",
+    "usnam-pmb": "^0.2.4"
   },
 
 

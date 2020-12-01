@@ -31,7 +31,7 @@ In case of an array they're just joined. Values in a dictionary may be:
 Usage
 -----
 
-from [test/basics.mjs](test/basics.mjs):
+see [test/basics.mjs](test/basics.mjs)
 
 
 <!--#toc stop="scan" -->
