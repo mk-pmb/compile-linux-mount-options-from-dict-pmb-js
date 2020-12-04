@@ -17,8 +17,13 @@ This module exports one function:
 
 ### compile(opt)
 
-Where `opt` are your mount options, as a dictionary object or an array.
-In case of an array they're just joined. Values in a dictionary may be:
+Where `opt` are your mount options, as…
+* a string: will be returned as-is.
+* any false-y value except empty string: returns `'defaults'`.
+* an array: returns all truthy elements from that array, `.join()`ed by `','`.
+* or a dictionary object, the actual reason for this module.
+
+Values supported in the dictionary are:
 
 * `undefined` to ignore that entry
 * A string

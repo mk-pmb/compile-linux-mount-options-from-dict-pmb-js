@@ -7,6 +7,11 @@ import fsOpt from '..';
 const eq = assert.strictEqual;
 
 
+eq(fsOpt(''), '');
+eq(fsOpt(),       'defaults');
+eq(fsOpt(0),      'defaults');
+eq(fsOpt(null),   'defaults');
+
 eq(fsOpt(['noatime', 'defaults']), 'noatime,defaults');
 
 eq(fsOpt({

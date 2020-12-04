@@ -1,5 +1,8 @@
 // -*- coding: utf-8, tab-width: 2 -*-
 
+import isStr from 'is-string';
+
+
 const hasOwn = Object.prototype.hasOwnProperty;
 
 const priorityOptions = [
@@ -8,6 +11,7 @@ const priorityOptions = [
 
 
 function compileFsOptFromDict(orig) {
+  if (isStr(orig)) { return orig; }
   if (!orig) { return 'defaults'; }
   if (Array.isArray(orig)) { return orig.filter(Boolean).join(','); }
   const dict = { ...orig };
